@@ -15,18 +15,18 @@ app.get('/visualizar', (req,res) => {
   res.render('visualizar', {message: 'Visualizar Meias'})
 })
 
-//proxima aula
+//proxima aula 26.10
 const produtos = [
-  {id: 1, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 2, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 3, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 4, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 5, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 6, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 7, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 8, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 9, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"},
-  {id: 10, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "link/nome da imagem"}
+  {id: 1, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia1.webp"},
+  {id: 2, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia2.jpg"},
+  {id: 3, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia3.jpg"},
+  {id: 4, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia4.jpg"},
+  {id: 5, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia5.jpg"},
+  {id: 6, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia6.jpg"},
+  {id: 7, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia7.jpg"},
+  {id: 8, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia8.jpg"},
+  {id: 9, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia9.jpg"},
+  {id: 10, nome: "nome do produto", preco: "30,00", descricao: "descricao do produto", imagem: "meia10.jpg"}
 ]
 
 
