@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 //proxima aula 26.10
 const produtos = [
-  {id: 1, nome: "meia de mãozinha", preco: "20,00", descricao: "Meia de mãozinha dada por R$20,00", imagem: "meia1.webp"},
+  {id: 1, nome: "meia de mãozinha", preco: "20,00", descricao: "Meia de mãozinha dada por R$20,00", imagem: "meia1.jpg"},
 
   {id: 2, nome: "meia stranger things", preco: "15,00", descricao: "Meia do HellFire Stranger Things por R$15,00", imagem: "meia2.jpg"},
   
@@ -15,7 +15,7 @@ const produtos = [
 
   {id: 4, nome: "meia hamburguer", preco: "23,90", descricao: "Meia de hamburguers por R$23,90", imagem: "meia4.jpg"},
 
-  {id: 5, nome: "meia halloween", preco: "21,80", descricao: "Meia de halloween por R$21,80", imagem: "meia5.jpg"},
+  {id: 5, nome: "meia halloween", preco: "21,80", descricao: "Meia do pateta R$21,80", imagem: "meia5.jpg"},
 
   {id: 6, nome: "meia de camera", preco: "17,99", descricao: "Meia de camera fotografica por R$17,99", imagem: "meia6.jpg"},
 
@@ -40,8 +40,9 @@ app.get('/', (req, res) => {
  });
 
 
-app.get('/visualizar', (req,res) => {
-  res.render('visualizar', {message: 'Visualizar Meias'})
+app.get('/produtos/:id', (req,res) => {
+  const produto = buscarProdutoPorId(req.params.id)
+  res.render('produtos', { produto })
 })
 
 app.listen(port, () => {
